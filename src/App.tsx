@@ -1,14 +1,26 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
-import './App.css';
+import { Button } from 'primereact/button';
+import { PrimeReactContext } from 'primereact/api';
 
 function App() {
   const [count, setCount] = useState(0);
+  const { changeTheme } = useContext(PrimeReactContext);
+
+  function handleClick() {
+    if (changeTheme) {
+      changeTheme('lara-light-teal', 'lara-dark-teal', 'theme-link', () => {
+        console.log('Cambiando tema');
+      });
+    }
+  }
 
   return (
     <>
       <div>
+        <Button onClick={handleClick}>Prime React</Button>
+
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
