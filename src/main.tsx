@@ -1,15 +1,12 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
-import { PrimeReactProvider } from 'primereact/api';
-import { ThemeContextProvider } from './contexts';
+import { GlobalProviders } from './contexts/GlobalProviders.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <PrimeReactProvider>
-      <ThemeContextProvider>
-        <App />
-      </ThemeContextProvider>
-    </PrimeReactProvider>
+    <GlobalProviders>
+      <App />
+    </GlobalProviders>
   </StrictMode>
 );
