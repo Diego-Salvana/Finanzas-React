@@ -1,19 +1,19 @@
-import { Button } from 'primereact/button';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { DarkThemeContext } from '../../contexts';
+import { InputSwitch, type InputSwitchChangeEvent } from 'primereact/inputswitch';
 
 export function ThemeButton() {
   const { isDark, setIsDark } = useContext(DarkThemeContext);
+  const [checked, setChecked] = useState(isDark);
 
-  function handleClick() {
-    console.log('Theme button click');
-    console.log(`Is dark: ${isDark}`);
-    setIsDark(!isDark);
+  function handleTheme(event: InputSwitchChangeEvent) {
+    setChecked(event.value);
+    setIsDark(event.value);
   }
 
   return (
     <>
-      <Button onClick={handleClick}>Theme button</Button>
+      <InputSwitch checked={checked} onChange={(event: InputSwitchChangeEvent) => handleTheme(event)} />
     </>
   );
 }

@@ -1,0 +1,46 @@
+:root {
+   /* Layout breakpoints */
+   --layout-sm: 576px;
+   --layout-md: 768px;
+   --layout-lg: 992px;
+   --layout-xl: 1200px;
+   /* Navbar heights */
+   --nav-height-long: 5.25rem;
+   --nav-height-short: 4rem;
+   --color-micolor: blue;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+body {
+   min-height: 100vh;
+   margin: 0;
+   padding: 0 0 12rem 0;
+   background-color: var(--surface-ground);
+   position: relative;
+}
+
+a {
+   text-decoration: none;
+}
+
+/* Clases globales */
+.bg-card {
+   background-color: var(--surface-card);
+}
+
+.border-card {
+   border-radius: var(--border-radius);
+}
+
+.text-color-primary {
+   color: var(--primary-color);
+}
+
+.text-color-gray-500 {
+   color: var(--gray-500);
+}

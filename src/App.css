@@ -1,0 +1,12 @@
+@import './index.css';
+
+body {
+   padding-top: var(--nav-height-short);
+}
+
+/* --layout-lg: 992px */
+@media (min-width: 992px) {
+   body {
+      padding-top: var(--nav-height-long);
+   }
+}

@@ -20,12 +20,10 @@ export function ThemeContextProvider({ children }: Props) {
     if (isDark) {
       changeTheme(lightTheme, darkTheme, themeLink, () => {
         localStorage.setItem('theme', 'dark');
-        console.log('Cambiando tema a oscuro');
       });
     } else {
       changeTheme(darkTheme, lightTheme, themeLink, () => {
         localStorage.setItem('theme', 'light');
-        console.log('Cambiando tema a claro');
       });
     }
   }, [changeTheme, isDark]);
