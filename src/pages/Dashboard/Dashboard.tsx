@@ -1,6 +1,6 @@
 import './Dashboard.css';
 import { Link, Navigate, Route, useLocation } from 'react-router-dom';
-import { DollarPanel, RoutesWithNotFound } from '../../components';
+import { Comparator, DollarPanel, RoutesWithNotFound } from '../../components';
 import { Button } from 'primereact/button';
 
 export function Dashboard() {
@@ -16,16 +16,16 @@ export function Dashboard() {
               raised
               rounded
               severity={location.pathname.includes('/panel') ? undefined : 'secondary'}
-              className="text-xl py-3 w-18rem"
+              className="text-xl py-3 w-18rem btn-section"
             />
           </Link>
-          <Link to={'/dashboard/calculator'}>
+          <Link to={'/dashboard/comparator'}>
             <Button
               label="Cuotas vs Efectivo"
               raised
               rounded
-              severity={location.pathname.includes('/calculator') ? undefined : 'secondary'}
-              className="text-xl py-3 w-18rem"
+              severity={location.pathname.includes('/comparator') ? undefined : 'secondary'}
+              className="text-xl py-3 w-18rem btn-section"
             />
           </Link>
         </section>
@@ -34,7 +34,7 @@ export function Dashboard() {
           <RoutesWithNotFound>
             <Route path="/" element={<Navigate to="panel" />} />
             <Route path="/panel" element={<DollarPanel />} />
-            <Route path="/calculator" element={<h2>Calculadora</h2>} />
+            <Route path="/comparator" element={<Comparator />} />
           </RoutesWithNotFound>
         </section>
       </main>

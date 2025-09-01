@@ -7,7 +7,6 @@
    /* Navbar heights */
    --nav-height-long: 5.25rem;
    --nav-height-short: 4rem;
-   --color-micolor: blue;
 }
 
 *,
@@ -35,6 +34,10 @@ a {
 
 .border-card {
    border-radius: var(--border-radius);
+}
+
+.border-color-primary {
+   border-color: var(--primary-color);
 }
 
 .text-color-primary {

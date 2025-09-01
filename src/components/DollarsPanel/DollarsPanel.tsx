@@ -14,7 +14,6 @@ export function DollarPanel() {
     fetch(apiUrl)
       .then(response => response.json())
       .then((data: Dollar[]) => {
-        console.log(data);
         setDollarList(data.filter(dollar => dollar.casa !== 'mayorista'));
       })
       .catch(err => console.log(err))

@@ -1,44 +1,16 @@
 import './DollarCard.css';
 import { Card } from 'primereact/card';
 import type { Dollar } from '../../interfaces';
+import { datePipe, dollarNamePipe, pricePipe } from '../../utils';
 
 interface Props {
   dollar: Dollar;
 }
 
 export function DollarCard({ dollar }: Props) {
-  function namePipe(name: string): string {
-    switch (name) {
-      case 'Bolsa':
-        return 'MEP';
-      case 'Contado con liquidación':
-        return 'CCL';
-      default:
-        return name;
-    }
-  }
-
-  function pricePipe(price: number): string {
-    return price.toLocaleString('es-AR', {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2
-    });
-  }
-
-  function datePipe(date: string): string {
-    return new Date(date).toLocaleDateString('es-AR', {
-      year: '2-digit',
-      month: 'numeric',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: '2-digit',
-      hour12: false
-    });
-  }
-
   return (
     <Card>
-      <h2 className="font-semibold m-0 text-center">Dólar {namePipe(dollar.nombre)}</h2>
+      <h2 className="font-semibold m-0 text-center">Dólar {dollarNamePipe(dollar.nombre)}</h2>
 
       <div className="flex justify-content-between align-items-start mt-3">
         <div className="w-5 text-center">
