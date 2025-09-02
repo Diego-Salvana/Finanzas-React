@@ -1,69 +1,69 @@
-# React + TypeScript + Vite
+# Finanzas React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para visualizar cotizaciones del dólar en Argentina y calcular la conveniencia de compras en cuotas vs. efectivo.
 
-Currently, two official plugins are available:
+## 🚀 Demo en Vivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Puedes ver la aplicación en funcionamiento aquí: **[Enlace a la App](https://tu-app-aqui.com)**
 
-## Expanding the ESLint configuration
+## ✨ Características Principales
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+*   **Página de Inicio (Landing Page):** Presentación inicial de la aplicación.
+*   **Dashboard de Cotizaciones:** Muestra en tiempo real las diferentes cotizaciones del dólar en Argentina (Oficial, Blue, MEP, etc.).
+*   **Calculadora de Cuotas vs. Efectivo:** Herramienta para determinar la conveniencia de pagar en cuotas con interés o al contado.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Tecnologías Utilizadas
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Este proyecto está construido con tecnologías modernas para el desarrollo web:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*   **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+*   **Vite**: Herramienta de frontend de última generación para un desarrollo más rápido.
+*   **TypeScript**: Superset de JavaScript que añade tipado estático.
+*   **PrimeReact**: Completa suite de componentes de UI para React.
+*   **ESLint**: Para identificar y reportar patrones en el código.
+*   **Prettier**: Para mantener un estilo de código consistente.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🏁 Cómo Empezar
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Sigue estos pasos para tener una copia del proyecto corriendo en tu máquina local.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Prerrequisitos
+
+Asegúrate de tener Node.js instalado (se recomienda la versión LTS).
+
+### Instalación
+
+1.  Clona el repositorio:
+    ```sh
+    git clone https://github.com/tu-usuario/finanzas-react.git
+    ```
+2.  Navega al directorio del proyecto:
+    ```sh
+    cd finanzas-react
+    ```
+3.  Instala las dependencias:
+    ```sh
+    npm install
+    ```
+
+## 📜 Scripts Disponibles
+
+En el directorio del proyecto, puedes ejecutar:
+
+### `npm run dev`
+
+Ejecuta la aplicación en modo de desarrollo.
+Abre http://localhost:5173 para verla en tu navegador. La página se recargará si haces cambios.
+
+### `npm run build`
+
+Compila la aplicación para producción en la carpeta `dist`.
+Empaqueta React en modo de producción y optimiza la compilación para obtener el mejor rendimiento.
+
+### `npm run lint`
+
+Ejecuta ESLint para analizar el código en busca de problemas y errores de estilo.
+
+### `npm run preview`
+
+Inicia un servidor local para previsualizar la build de producción.

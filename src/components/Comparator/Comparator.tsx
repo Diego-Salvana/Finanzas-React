@@ -26,7 +26,7 @@ export function Comparator() {
 
   function handleClear(event: MouseEvent<HTMLButtonElement, globalThis.MouseEvent>) {
     event.preventDefault();
-    
+
     setForm(InitialForm);
   }
 
@@ -95,10 +95,10 @@ export function Comparator() {
 
       <div className="form-container">
         <form>
-          <div className="bg-card p-4 border-card border-2 border-color-primary p-fluid">
+          <div className="bg-card p-4 border-card border-2 border-primary p-fluid">
             <div className="grid formgrid justify-content-around p-fluid">
               <div className="col-12 md:col-6 xl:pr-3">
-                <h2 className="text-center text-color-primary">Compra en Cuotas</h2>
+                <h2 className="text-center text-primary">Compra en Cuotas</h2>
 
                 <div className="field mb-4">
                   <label htmlFor="price" className="font-semibold text-900">
@@ -166,7 +166,7 @@ export function Comparator() {
               </div>
 
               <div className="col-12 md:col-6 xl:pl-3">
-                <h2 className="text-center text-color-primary">Inversión</h2>
+                <h2 className="text-center text-primary">Inversión</h2>
 
                 <div className="field mb-4">
                   <label htmlFor="expected_return" className="font-semibold text-900">

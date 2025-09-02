@@ -29,7 +29,7 @@ nav {
 	.hide-nav-menu {
 		opacity: 0;
 		transform: translateY(-100%);
-		transition-property: transform, opacity;
+		transition: opacity 0.2s linear, transform 0s linear 0.2s;
 	}
 }
 

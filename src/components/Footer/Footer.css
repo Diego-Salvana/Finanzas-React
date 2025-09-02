@@ -1,0 +1,11 @@
+footer>div {
+   border-color: var(--surface-500);
+}
+
+.social-link {
+   transition: all .1s ease-in;
+}
+
+.social-link:hover {
+   color: var(--gray-500);
+}

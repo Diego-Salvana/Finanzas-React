@@ -7,6 +7,11 @@
    /* Navbar heights */
    --nav-height-long: 5.25rem;
    --nav-height-short: 4rem;
+   /* Colors */
+   --p-primary-color: var(--primary-color);
+   --p-teal-500: var(--teal-500);
+   --p-teal-600: var(--teal-600);
+   --p-gray-500: var(--gray-500);
 }
 
 *,
@@ -34,16 +39,4 @@ a {
 
 .border-card {
    border-radius: var(--border-radius);
-}
-
-.border-color-primary {
-   border-color: var(--primary-color);
-}
-
-.text-color-primary {
-   color: var(--primary-color);
-}
-
-.text-color-gray-500 {
-   color: var(--gray-500);
 }

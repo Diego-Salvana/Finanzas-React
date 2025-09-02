@@ -2,30 +2,9 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import { Button } from 'primereact/button';
 import { FeatureCard } from '../../components';
-import type { Feature } from '../../interfaces';
+import { featuresData } from '../../data/features-list';
 
 export function Home() {
-  const featureList: Feature[] = [
-    {
-      icon: '<img src="react.svg" alt="" width="45px" height="45px">',
-      title: 'Angular v18',
-      description:
-        'Desarrollo con Angular v18 y las ventajas de Signals para crear una interfaz reactiva y fluida.'
-    },
-    {
-      icon: '<i class="text-5xl pi pi-server pb-1"></i>',
-      iconColor: 'text-blue-800',
-      title: 'SSR',
-      description:
-        'Implementación de Server Side Rendering ofreciendo mayor rendimiento y tiempos de carga optimizados.'
-    },
-    {
-      icon: '<img src="primeng-logo.svg" alt="" width="45px" height="45px">',
-      title: 'PrimeNG',
-      description: 'Diseño funcional utilizando componentes personalizables y temas de PrimeNG.'
-    }
-  ];
-
   return (
     <>
       <header className="px-4 lg:px-6 xl:px-8 pb-8 pt-5 lg:pt-6 xl:pt-7">
@@ -48,7 +27,7 @@ export function Home() {
 
           <div className="w-full lg:pr-3 xl:w-6 flex align-items-center justify-content-center xl:justify-content-end mt-5 xl:mt-0">
             <div className="img-container">
-              <img src="./business.jpg" alt="Businnes-img" className="shadow-2 header-img" />
+              <img src="/img/business.jpg" alt="Businnes-img" className="shadow-2 header-img" />
             </div>
           </div>
         </div>
@@ -61,7 +40,7 @@ export function Home() {
           </div>
 
           <div className="grid mt-7">
-            {featureList.map((feature, index) => (
+            {featuresData.map((feature, index) => (
               <div key={index} className="col-12 md:col-4 p-2 text-center">
                 <FeatureCard feature={feature} />
               </div>

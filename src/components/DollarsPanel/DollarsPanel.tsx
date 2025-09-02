@@ -22,7 +22,7 @@ export function DollarPanel() {
 
   return (
     <>
-      <div className="grid justify-content-center gap-3">
+      <div className="grid justify-content-center gap-3 dollar-panel">
         {isLoading &&
           skeletons.map((_, index) => (
             <Skeleton
@@ -44,7 +44,7 @@ export function DollarPanel() {
         {!isLoading && !dollarList && <h2>No se pudo obtener la información.</h2>}
       </div>
 
-      <p className="text-center text-color-gray-500 mt-4">Datos obtenidos de DolarApi.com</p>
+      <p className="text-center text-gray-500 mt-4">Datos obtenidos de DolarApi.com</p>
     </>
   );
 }

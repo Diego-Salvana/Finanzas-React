@@ -14,20 +14,20 @@ export function DollarCard({ dollar }: Props) {
 
       <div className="flex justify-content-between align-items-start mt-3">
         <div className="w-5 text-center">
-          <span className="text-3xl sm:text-4xl font-bold text-color-primary">
+          <span className="text-3xl sm:text-4xl font-bold text-primary">
             {pricePipe(dollar.compra)}
           </span>
-          <p className="font-medium m-0 text-color-gray-500">Compra</p>
+          <p className="font-medium m-0 text-gray-500">Compra</p>
         </div>
         <div className="w-5 text-center">
-          <span className="text-3xl sm:text-4xl font-bold text-color-primary">
+          <span className="text-3xl sm:text-4xl font-bold text-primary">
             {pricePipe(dollar.compra)}
           </span>
-          <p className="font-medium m-0 text-color-gray-500">Venta</p>
+          <p className="font-medium m-0 text-gray-500">Venta</p>
         </div>
       </div>
 
-      <p className="mb-0 mt-3 text-right text-sm text-color-gray-500">
+      <p className="mb-0 mt-3 text-right text-sm text-gray-500">
         Actualización: {datePipe(dollar.fechaActualizacion)}
       </p>
     </Card>
