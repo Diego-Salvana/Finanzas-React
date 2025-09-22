@@ -2,28 +2,27 @@
 
 Aplicación web para visualizar cotizaciones del dólar en Argentina y calcular la conveniencia de compras en cuotas vs. efectivo.
 
-## 🚀 Demo en Vivo
+> **Nota**: Esta es la versión de la aplicación desarrollada con **React**. También existe una versión equivalente desarrollada con **Angular**.
 
-Puedes ver la aplicación en funcionamiento aquí: **[Enlace a la App](https://tu-app-aqui.com)**
+## Demo en Vivo
 
-## ✨ Características Principales
+Puedes ver la aplicación en funcionamiento aquí: **[finanzas-react.app](https://finanzas-react.vercel.app/)**
+
+## Características Principales
 
 *   **Página de Inicio (Landing Page):** Presentación inicial de la aplicación.
 *   **Dashboard de Cotizaciones:** Muestra en tiempo real las diferentes cotizaciones del dólar en Argentina (Oficial, Blue, MEP, etc.).
 *   **Calculadora de Cuotas vs. Efectivo:** Herramienta para determinar la conveniencia de pagar en cuotas con interés o al contado.
 
-## 🚀 Tecnologías Utilizadas
-
-Este proyecto está construido con tecnologías modernas para el desarrollo web:
+## Tecnologías Utilizadas
 
 *   **React**: Biblioteca de JavaScript para construir interfaces de usuario.
 *   **Vite**: Herramienta de frontend de última generación para un desarrollo más rápido.
 *   **TypeScript**: Superset de JavaScript que añade tipado estático.
 *   **PrimeReact**: Completa suite de componentes de UI para React.
 *   **ESLint**: Para identificar y reportar patrones en el código.
-*   **Prettier**: Para mantener un estilo de código consistente.
 
-## 🏁 Cómo Empezar
+## Cómo Empezar
 
 Sigue estos pasos para tener una copia del proyecto corriendo en tu máquina local.
 
@@ -46,7 +45,7 @@ Asegúrate de tener Node.js instalado (se recomienda la versión LTS).
     npm install
     ```
 
-## 📜 Scripts Disponibles
+## Scripts Disponibles
 
 En el directorio del proyecto, puedes ejecutar:
 

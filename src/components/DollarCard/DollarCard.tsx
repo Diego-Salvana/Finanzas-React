@@ -21,7 +21,7 @@ export function DollarCard({ dollar }: Props) {
         </div>
         <div className="w-5 text-center">
           <span className="text-3xl sm:text-4xl font-bold text-primary">
-            {pricePipe(dollar.compra)}
+            {pricePipe(dollar.venta)}
           </span>
           <p className="font-medium m-0 text-gray-500">Venta</p>
         </div>
